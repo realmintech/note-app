@@ -1,0 +1,62 @@
+.note_form {
+  position: relative;
+  display: inline-block;
+}
+
+.icon {
+  position: absolute;
+  right: 5px;
+  top: 10%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #000;
+}
+
+.icon svg {
+  margin: 0 3px;
+  color: gray;
+  font-size: 20px;
+}
+
+.note-display {
+  margin-top: 20px;
+}
+
+.card_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edit_and_delete {
+  cursor: pointer;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.note_card {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    border: none;
+}
+
+.note_card:nth-child(4n) {
+  background: navy;
+  color: white;
+}
+
+.note_card:nth-child(4n + 1) {
+  background: white;
+  color: orangered;
+}
+
+.note_card:nth-child(4n + 2) {
+  background: green;
+  color: white;
+}
+
+.note_card:nth-child(4n + 3) {
+  background: orangered;
+  color: white;
+}

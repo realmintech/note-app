@@ -1,0 +1,41 @@
+
+.page_name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.note_form {
+    position: relative;
+    display: inline-block;
+}
+
+.icon {
+  position: absolute;
+  right: 5px;
+  top: 20%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #000;
+}
+
+.icon svg {
+    margin: 0 3px;
+    color: gray;
+    font-size: 20px;
+}
+
+.textarea_text {
+  width: 100%;
+}
+
+.action_btn {
+  background-color: orangered;
+  color: white;
+  border: none;
+}
+
+.action_btn:hover {
+  color: orangered;
+  background-color: white;
+  border: 1px solid orangered;
+}
