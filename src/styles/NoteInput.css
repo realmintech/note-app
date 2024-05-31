@@ -39,24 +39,6 @@
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
     rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
     border: none;
-}
-
-.note_card:nth-child(4n) {
-  background: navy;
-  color: white;
-}
-
-.note_card:nth-child(4n + 1) {
-  background: white;
-  color: orangered;
-}
-
-.note_card:nth-child(4n + 2) {
-  background: green;
-  color: white;
-}
-
-.note_card:nth-child(4n + 3) {
-  background: orangered;
-  color: white;
+    margin-top: 20px;
+    margin-left: 70px;
 }

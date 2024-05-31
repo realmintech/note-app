@@ -8,12 +8,14 @@ export default function Header() {
   const [showModal, setShowModal] = useState(false);
   const [title, setTitle] = useState('');
   const [message, setMessage] = useState('');
+  const [createdAt] = useState(new Date().toLocaleDateString())
+
 
   const handleClose = () => setShowModal(false);
   const handleShow = () => setShowModal(true);
 
   const handleSave = () => {
-    const newNote = { title, message };
+    const newNote = { title, message, createdAt };
     const noteId = `${Date.now()}`;
     localStorage.setItem(noteId, JSON.stringify(newNote));
     window.location.reload();
