@@ -38,7 +38,36 @@
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
     rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-    border: none;
-    margin-top: 20px;
-    margin-left: 70px;
+  border: none;
+  margin-top: 20px;
+  /* margin-left: 70px; */
+}
+
+.delete_icon {
+  color: red;
+}
+
+.edit_icon {
+  color: green;
+}
+
+.created_text {
+  font-style: italic;
+  font-size: small;
+}
+
+.card_title {
+  text-transform: capitalize;
+  font-weight: 600;
+  color: black;
+  font-size: large;
+}
+
+.card_note {
+  text-transform: capitalize;
+  font-size: medium;
+}
+
+.note_display {
+  margin-top: 2.5rem;
 }

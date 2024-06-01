@@ -60,19 +60,21 @@ function NoteDisplay() {
       <div className="note_display container">
         <div className="row">
           {notes.map((note) => (
-            <Card key={note.id} className="col-lg-3 col-md-6 col-sm-12 note_card">
-              <Card.Body>
-                <Card.Title>{note.title}</Card.Title>
-                <Card.Text>{note.message}</Card.Text>
-                <div className="card_footer">
-                  <Card.Text>{note.createdAt}</Card.Text>
-                  <span className="edit_and_delete">
-                    <FaTrash onClick={() => handleDelete(note.id)} />
-                    <FaEdit onClick={() => handleEdit(note.id)} />
-                  </span>
-                </div>
-              </Card.Body>
-            </Card>
+            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-3">
+              <Card key={note.id}>
+                <Card.Body>
+                  <Card.Title className='card_title'>{note.title}</Card.Title>
+                  <Card.Text className='card_note'>{note.message}</Card.Text>
+                  <div className="card_footer">
+                    <Card.Text className='created_text'>{note.timeString}</Card.Text>
+                    <span className="edit_and_delete">
+                      <FaTrash onClick={() => handleDelete(note.id)} className='delete_icon' />
+                      <FaEdit onClick={() => handleEdit(note.id)} className='edit_icon' />
+                    </span>
+                  </div>
+                </Card.Body>
+              </Card>
+            </div>
           ))}
         </div>
       </div>
@@ -105,10 +107,10 @@ function NoteDisplay() {
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <Button className='action_btn' onClick={() => setModal(false)}>
+          <Button className="action_btn" onClick={() => setModal(false)}>
             Close
           </Button>
-          <Button className='action_btn' onClick={handleUpdate}>
+          <Button className="action_btn" onClick={handleUpdate}>
             Update
           </Button>
         </Modal.Footer>
